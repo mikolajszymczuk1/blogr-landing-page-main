@@ -37,6 +37,10 @@ export default {
     outline: none;
     background-color: transparent;
 
+    @media screen and (min-width: 1024px) {
+        display: none;        
+    }
+
     // &__icon {}
 }
 </style>

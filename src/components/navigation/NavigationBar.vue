@@ -1,6 +1,6 @@
 <template>
     <nav class="navigation-bar">
-        <LogoImage image-width="80" />
+        <LogoImage />
         <NavigationBurgerIcon @activeMenu="activeMenu" />
 
         <div class="navigation-bar__content"
@@ -92,6 +92,14 @@ export default {
 
     padding: 50px 25px;
 
+    @media screen and (min-width: 1024px) {
+        padding: 50px 100px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding: 60px 165px;
+    }
+
     &__content {
         display: none;
         position: absolute;
@@ -109,6 +117,26 @@ export default {
 
         text-align: center;
 
+        @media screen and (min-width: 1024px) {
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+            position: static;
+
+            padding: 0;
+            margin-left: 60px;
+
+            width: 100%;
+
+            transform: translateX(0);
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-left: 70px;
+        }
+
         &--active {
             display: block;
         }
@@ -118,6 +146,14 @@ export default {
         padding-bottom: 10px;
 
         border-bottom: solid 1px rgba(colors.$Grayish-blue, 0.5);
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+
+            padding: 0;
+
+            border-bottom: 0;
+        }
     }
 
     &__link {
@@ -130,23 +166,36 @@ export default {
         font-size: 0.95em;
         font-weight: 500;
 
-        &:first-child {
-            margin-top: 12px;
+        @media screen and (min-width: 1024px) {
+            padding: 8px;
         }
+        
+        @media screen and (max-width: 1024px) {
+            &:first-child {
+                margin-top: 12px;
+            }
 
-        &:last-child {
-            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 12px;
+            }
         }
     }
 
     &__login-links-group {
         display: flex;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
 
         padding: 18px 0;
 
         font-family: fonts.$Ubuntu;
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+
+            padding: 0;
+        }
     }
 
     &__login-link {
@@ -155,18 +204,31 @@ export default {
         border-radius: 50px;
 
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 700;
     
         &--login {
             margin-bottom: 10px;
 
             color: colors.$Very-dark-blue;
+
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 0;
+                padding: 15px 30px;
+
+                color: rgba(colors.$White, 0.7);
+            }
         }
 
         &--sign-up {
             background-color: colors.$Primary-Light-red;
 
-            color: white;
+            color: colors.$White;
+
+            @media screen and (min-width: 1024px) {
+                background-color: colors.$White;
+
+                color: colors.$Primary-Light-red;
+            }
         }
     }
 }
