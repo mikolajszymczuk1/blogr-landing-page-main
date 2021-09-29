@@ -22,24 +22,26 @@
             </div>
             
             <div class="navigation-bar__login-links-group">
-                <a class="navigation-bar__login-link navigation-bar__login-link--login" href="#Login">Login</a>
-                <a class="navigation-bar__login-link navigation-bar__login-link--sign-up" href="#Sign-up">Sign Up</a>
+                <ButtonLink button-type="login" button-text="Login" button-href="#Login" />
+                <ButtonLink button-type="sign-up" button-text="Sign Up" button-href="#Sign-Up" />
             </div>
         </div>
     </nav>
 </template>
 
 <script>
-import LogoImage from "@/components/ui/LogoImage.vue";
+import LogoImage from "../ui/LogoImage.vue";
 import NavigationBurgerIcon from "./NavigationBurgerIcon.vue";
 import NavigationDropDownLink from "./NavigationDropDownLink.vue";
+import ButtonLink from "../ui/Buttons/ButtonLink.vue";
 
 export default {
     name: "NavigationBar",
     components: {
         LogoImage,
         NavigationBurgerIcon,
-        NavigationDropDownLink
+        NavigationDropDownLink,
+        ButtonLink
     },
     data() {
         return {
@@ -81,9 +83,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../../assets/scss/utilities/colors";
-@use "../../assets/scss/utilities/fonts";
-
 .navigation-bar {
     display: flex;
     justify-content: space-between;
@@ -106,7 +105,7 @@ export default {
         top: 127px;
         left: 50%;
 
-        padding: 20px;
+        padding: 20px 20px 15px 20px;
 
         width: 87%;
 
@@ -195,40 +194,6 @@ export default {
             flex-direction: row;
 
             padding: 0;
-        }
-    }
-
-    &__login-link {
-        padding: 15px 40px;
-
-        border-radius: 50px;
-
-        text-decoration: none;
-        font-weight: 700;
-    
-        &--login {
-            margin-bottom: 10px;
-
-            color: colors.$Very-dark-blue;
-
-            @media screen and (min-width: 1024px) {
-                margin-bottom: 0;
-                padding: 15px 30px;
-
-                color: rgba(colors.$White, 0.7);
-            }
-        }
-
-        &--sign-up {
-            background-color: colors.$Primary-Light-red;
-
-            color: colors.$White;
-
-            @media screen and (min-width: 1024px) {
-                background-color: colors.$White;
-
-                color: colors.$Primary-Light-red;
-            }
         }
     }
 }
