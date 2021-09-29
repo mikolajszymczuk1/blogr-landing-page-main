@@ -8,7 +8,7 @@
 import NavigationBar from "../navigation/NavigationBar.vue";
 
 export default {
-    name: "IndexHeader",
+    name: "HomeHeader",
     components: {
         NavigationBar,
     },

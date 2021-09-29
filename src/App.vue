@@ -1,16 +1,16 @@
 <template>
     <div>
-        <IndexHeader />
+        <HomeHeader />
     </div>
 </template>
 
 <script>
-import IndexHeader from "./components/layout/IndexHeader.vue";
+import HomeHeader from "./components/layout/HomeHeader.vue";
 
 export default {
     name: "App",
     components: {
-        IndexHeader,
+        HomeHeader,
     },
 };
 </script>
