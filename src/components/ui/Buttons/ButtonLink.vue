@@ -28,6 +28,10 @@ export default {
 
 <style lang="scss" scoped>
 .button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     padding: 15px 10px;
 
     width: 140px;
@@ -37,6 +41,7 @@ export default {
     text-decoration: none;
     font-family: fonts.$Ubuntu;
     font-weight: 700;
+    text-align: center;
 
     &--white {
         background-color: colors.$White;
@@ -72,7 +77,7 @@ export default {
 
     &--transparent {
         background-color: transparent;
-        border: solid 2px colors.$White;
+        border: solid 1px colors.$White;
 
         color: colors.$White;
     }
