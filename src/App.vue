@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import IndexHeader from "@/components/layout/IndexHeader.vue";
+import IndexHeader from "./components/layout/IndexHeader.vue";
 
 export default {
     name: "App",

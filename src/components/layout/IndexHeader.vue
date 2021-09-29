@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import NavigationBar from "@/components/navigation/NavigationBar.vue";
+import NavigationBar from "../navigation/NavigationBar.vue";
 
 export default {
     name: "IndexHeader",
