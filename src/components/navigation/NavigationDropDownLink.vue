@@ -33,9 +33,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../../assets/scss/utilities/colors";
-@use "../../assets/scss/utilities/fonts";
-
 .dropdown-link {
     $self: &;
     position: relative;

@@ -20,5 +20,15 @@ module.exports = {
             .options({
                 name: 'assets/[name].[hash:8].[ext]',
             });
+    },
+    css: {
+        loaderOptions: {
+            sass: {
+                prependData: `
+                    @use "src/assets/scss/utilities/fonts";
+                    @use "src/assets/scss/utilities/colors";
+                `
+            }
+        }
     }
 }
