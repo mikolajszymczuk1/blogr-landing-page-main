@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
     chainWebpack: (config) => {
         const svgRule = config.module.rule("svg");
@@ -20,6 +22,11 @@ module.exports = {
             .options({
                 name: 'assets/[name].[hash:8].[ext]',
             });
+        
+        config
+            .resolve
+            .alias
+            .set("@", path.resolve("src"));
     },
     css: {
         loaderOptions: {
