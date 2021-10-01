@@ -91,6 +91,8 @@ export default {
 
     padding: 50px 25px;
 
+    z-index: 2;
+
     @media screen and (min-width: 1024px) {
         padding: 50px 100px;
     }
