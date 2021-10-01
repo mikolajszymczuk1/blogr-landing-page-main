@@ -1,6 +1,6 @@
 <template>
     <a class="logo-link" href="#">
-        <img class="logo-link__image" src="../../assets/svg/logo.svg" alt="Logo" title="Logo">
+        <img class="logo-link__image" src="@/assets/svg/logo.svg" alt="Logo" title="Logo">
     </a>
 </template>
 

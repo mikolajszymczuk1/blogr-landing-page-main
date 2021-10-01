@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import NavigationBar from "../navigation/NavigationBar.vue";
-import ButtonLink from "../ui/Buttons/ButtonLink.vue";
+import NavigationBar from "@/components/navigation/NavigationBar.vue";
+import ButtonLink from "@/components/ui/buttons/ButtonLink.vue";
 
 export default {
     name: "HomeHeader",
@@ -55,7 +55,7 @@ export default {
         width: 100%;
         height: 100%;
 
-        background-image: url("../../assets/svg/bg-pattern-intro.svg");
+        background-image: url("~@/assets/svg/bg-pattern-intro.svg");
         background-repeat: no-repeat;
         background-position: 35% 35%;
         background-size: 350%;

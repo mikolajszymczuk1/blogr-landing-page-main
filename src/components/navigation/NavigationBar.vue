@@ -30,10 +30,10 @@
 </template>
 
 <script>
-import LogoImage from "../ui/LogoImage.vue";
-import NavigationBurgerIcon from "./NavigationBurgerIcon.vue";
-import NavigationDropDownLink from "./NavigationDropDownLink.vue";
-import ButtonLink from "../ui/Buttons/ButtonLink.vue";
+import LogoImage from "@/components/ui/LogoImage.vue";
+import NavigationBurgerIcon from "@/components/navigation/NavigationBurgerIcon.vue";
+import NavigationDropDownLink from "@/components/navigation/NavigationDropDownLink.vue";
+import ButtonLink from "@/components/ui/buttons/ButtonLink.vue";
 
 export default {
     name: "NavigationBar",

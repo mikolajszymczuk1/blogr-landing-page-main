@@ -3,12 +3,12 @@
         <div class="dropdown-link__activator">
             {{ dropdownName }}
             <img class="dropdown-link__arrow-icon"
-                src="../../assets/svg/icon-arrow-dark.svg"
+                src="@/assets/svg/icon-arrow-dark.svg"
                 alt="Arrow icon"
                 title="Arrow icon"
             />
             <img class="dropdown-link__arrow-icon"
-                src="../../assets/svg/icon-arrow-light.svg"
+                src="@/assets/svg/icon-arrow-light.svg"
                 alt="Arrow icon"
                 title="Arrow icon"
             />

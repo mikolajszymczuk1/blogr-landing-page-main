@@ -32,8 +32,8 @@ module.exports = {
         loaderOptions: {
             sass: {
                 prependData: `
-                    @use "src/assets/scss/utilities/fonts";
-                    @use "src/assets/scss/utilities/colors";
+                    @use "~@/assets/scss/utilities/fonts";
+                    @use "~@/assets/scss/utilities/colors";
                 `
             }
         }
