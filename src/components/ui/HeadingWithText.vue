@@ -32,51 +32,53 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .heading-with-text {
-        $self: &;
+.heading-with-text {
+    $self: &;
 
-        text-align: center;
-        font-family: fonts.$Overpass;
+    text-align: center;
+    font-family: fonts.$Overpass;
+
+    @media screen and (min-width: 1024px) {
+        text-align: left;
+    }
+
+    &--margin-bottom {
+        margin-bottom: 40px;
 
         @media screen and (min-width: 1024px) {
-            text-align: left;
-        }
-
-        &--margin-bottom {
-            margin-bottom: 40px;
-
-            @media screen and (min-width: 1024px) {
-                margin-bottom: 75px;
-            }
-        }
-
-        &__heading {
-            margin-bottom: 15px;
-            
-            color: colors.$Very-dark-blue;
-            font-size: 1.8em;
-            line-height: 35px;
-
-            @media screen and (min-width: 1024px) {
-                margin-bottom: 25px;
-            }
-
-            #{ $self }--light & {
-                color: colors.$White;
-            }
-        }
-
-        &__text {
-            line-height: 28px;
-            color: colors.$Very-dark-grayish-blue;
-
-            #{ $self }--light & {
-                color: rgba(colors.$White, 0.8);
-            }
-
-            @media screen and (min-width: 768px) {
-                letter-spacing: 0.5px;
-            }
+            margin-bottom: 75px;
         }
     }
+
+    &__heading {
+        margin-bottom: 15px;
+        
+        color: colors.$Very-dark-blue;
+        font-size: 1.8em;
+        line-height: 35px;
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 25px;
+        }
+
+        #{ $self }--light & {
+            color: colors.$White;
+            font-size: 2.5em;
+            line-height: 50px;
+        }
+    }
+
+    &__text {
+        line-height: 28px;
+        color: colors.$Very-dark-grayish-blue;
+
+        #{ $self }--light & {
+            color: rgba(colors.$White, 0.8);
+        }
+
+        @media screen and (min-width: 768px) {
+            letter-spacing: 0.5px;
+        }
+    }
+}
 </style>
