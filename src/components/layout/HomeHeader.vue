@@ -86,7 +86,7 @@ export default {
         padding: 65px 0 155px 0;
 
         @media screen and (min-width: 1440px) {
-            padding: 100px 0 165px 0;
+            padding: 85px 0 145px 0;
         }
     }
 
