@@ -43,9 +43,11 @@ export default {
 <style lang="scss" scoped>
     .section-benefits {
         padding-top: 15px;
+        margin-bottom: 90px;
 
         @media screen and (min-width: 1440px) {
             padding-top: 50px;
+            margin-bottom: 60px;
         }
     }
 </style>
