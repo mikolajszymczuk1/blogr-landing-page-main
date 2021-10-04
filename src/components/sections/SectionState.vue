@@ -1,5 +1,5 @@
 <template>
-    <section class="section-state">
+    <section class="section-state" aria-label="section-state">
         <div class="section-state__image-wrapper">
             <img class="section-state__image" src="@/assets/svg/illustration-phones.svg" alt="image" title="image">
         </div>

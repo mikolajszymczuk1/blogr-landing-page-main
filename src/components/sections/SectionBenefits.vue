@@ -1,5 +1,5 @@
 <template>
-    <section class="section-benefits">
+    <section class="section-benefits" aria-label="section-benefits">
         <StructureTextImage second-style>
             <HeadingWithText first-child-margin>
                 <template v-slot:heading>
