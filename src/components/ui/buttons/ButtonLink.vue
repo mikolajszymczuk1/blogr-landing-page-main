@@ -47,6 +47,12 @@ export default {
         background-color: colors.$White;
 
         color: colors.$Primary-Light-red;
+
+        &:hover {
+            background-color: rgba(colors.$White, 0.2);
+
+            color: colors.$White;
+        }
     }
 
     &--sign-up {
@@ -58,6 +64,12 @@ export default {
             background-color: colors.$White;
 
             color: colors.$Primary-Light-red;
+
+            &:hover {
+                background-color: rgba(colors.$White, 0.2);
+
+                color: colors.$White;
+            }
         }
     }
 
@@ -80,6 +92,12 @@ export default {
         border: solid 1px colors.$White;
 
         color: colors.$White;
+
+        &:hover {
+            background-color: colors.$White;
+
+            color: colors.$Primary-Light-red;
+        }
     }
 }
 </style>

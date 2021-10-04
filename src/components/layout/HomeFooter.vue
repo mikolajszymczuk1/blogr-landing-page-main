@@ -126,6 +126,12 @@ export default {
         text-decoration: none;
         color: rgba(colors.$White, 0.7);
 
+        @media screen and (min-width: 1024px) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
         @media screen and (min-width: 1440px) {
             margin-bottom: 17px;
         }

@@ -1,7 +1,7 @@
 <template>
     <div class="dropdown-link">
         <div class="dropdown-link__activator">
-            {{ dropdownName }}
+            <span class="dropdown-link__dropdown-name">{{ dropdownName }}</span>
             <img class="dropdown-link__arrow-icon"
                 src="@/assets/svg/icon-arrow-dark.svg"
                 alt="Arrow icon"
@@ -60,6 +60,10 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    &__dropdown-name {
+        cursor: pointer;
 
         color: colors.$Very-dark-blue;
         font-weight: 500;
@@ -69,6 +73,11 @@ export default {
             color: rgba(colors.$White, 0.7);
             font-size: 1em;
             font-weight: 700;
+
+            &:hover {
+                text-decoration: underline;
+                color: colors.$White;
+            }
         }
     }
 
@@ -104,8 +113,9 @@ export default {
             position: absolute;
             left: -25px;
 
-            padding: 25px 60px 25px 15px;
+            padding: 25px 0 25px 15px;
 
+            width: 150px;
             height: auto;
 
             overflow-y: visible;

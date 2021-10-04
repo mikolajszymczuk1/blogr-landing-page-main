@@ -158,6 +158,11 @@ export default {
                 margin-bottom: 12px;
             }
         }
+
+        &:hover {
+            color: colors.$Very-dark-black-blue;
+            font-weight: 700;
+        }
     }
 
     &__login-links-group {
