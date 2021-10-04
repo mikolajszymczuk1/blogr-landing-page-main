@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/vue-training-wv69e7ab3)
 - Live Site URL: [Live](https://zen-galileo-e170c1.netlify.app/)
 
 ## My process
