@@ -7,12 +7,12 @@
             :class="isMenuActive ? 'navigation-bar__content--active' : ''"
         >
             <div class="navigation-bar__link-container">
-                <NavigationDropDownLink v-for="dropdown in allDropdowns"
-                    :key="dropdown.name"
-                    :dropdownName="dropdown.name"
+                <NavigationDropDownLink v-for="category in allNavigationLinks"
+                    :key="category.name"
+                    :dropdownName="category.name"
                 >
                     <a class="navigation-bar__link"
-                        v-for="link in dropdown.links"
+                        v-for="link in category.links"
                         :key="link.linkName"
                         :href="link.url"
                     >
@@ -34,6 +34,7 @@ import LogoImage from "@/components/ui/LogoImage.vue";
 import NavigationBurgerIcon from "@/components/navigation/NavigationBurgerIcon.vue";
 import NavigationDropDownLink from "@/components/navigation/NavigationDropDownLink.vue";
 import ButtonLink from "@/components/ui/buttons/ButtonLink.vue";
+import { mapState } from "vuex";
 
 export default {
     name: "NavigationBar",
@@ -45,34 +46,11 @@ export default {
     },
     data() {
         return {
-            isMenuActive: false,
-            allDropdowns: [
-                {
-                    name: "Product", links: [
-                        { linkName: "Overview", url: "#Overview" },
-                        { linkName: "Pricing", url: "#Pricing" },
-                        { linkName: "Marketplace", url: "#Marketplace" },
-                        { linkName: "Features", url: "#Features" },
-                        { linkName: "Integrations", url: "#Integrations" }
-                    ]
-                },
-                {
-                    name: "Company", links: [
-                        { linkName: "About", url: "#About" },
-                        { linkName: "Team", url: "#Team" },
-                        { linkName: "Blog", url: "#Blog" },
-                        { linkName: "Careers", url: "#Careers" }
-                    ]
-                },
-                {
-                    name: "Connect", links: [
-                        { linkName: "Contact", url: "#Contact" },
-                        { linkName: "Newsletter", url: "#Newsletter" },
-                        { linkName: "LinkedIn", url: "#LinkedIn" }
-                    ]
-                }
-            ]
+            isMenuActive: false
         }
+    },
+    computed: {
+        ...mapState(["allNavigationLinks"])
     },
     methods: {
         activeMenu() {
