@@ -57,11 +57,13 @@ export default {
 
     &--sign-up {
         background-color: colors.$Primary-Light-red;
+        background: linear-gradient(to right, colors.$Very-light-red, colors.$Light-red);
 
         color: colors.$White;
 
         @media screen and (min-width: 1024px) {
             background-color: colors.$White;
+            background: none colors.$White;
 
             color: colors.$Primary-Light-red;
 
