@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import IconHamburger from "@/assets/svg/icon-hamburger.svg?inline";
-import IconClose from "@/assets/svg/icon-close.svg?inline";
+import IconHamburger from "@/components/ui/icons/IconHamburger.vue";
+import IconClose from "@/components/ui/icons/IconClose.vue";
 
 export default {
     name: "NavigationBurgerIcon",
